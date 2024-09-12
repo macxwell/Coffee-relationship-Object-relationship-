@@ -28,6 +28,7 @@ class Customer:
 
     @classmethod
     def most_aficionado(cls, coffee):
+        from oder import Order
         if not isinstance(coffee, Coffee):
             raise ValueError("Expected a Coffee instance.")
         customer_spending = {}
