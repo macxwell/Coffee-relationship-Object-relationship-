@@ -39,3 +39,6 @@ class Customer:
         if customer_spending:
             return max(customer_spending, key=customer_spending.get)
         return None
+    
+cust = Customer("Max")
+print(cust.name)
